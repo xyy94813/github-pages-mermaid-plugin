@@ -70,16 +70,14 @@ const panAndZoom = (ele) => {
     // let moveCounter = 0;
     const handleMouseMove = (e) => {
         if (!isDragging) return
-        const [newDx, newDy] = calculateOffset(e.x, e.y)
-        // const newDx = e.movementX;
-        // const newDy = e.movementX;
+        const [offsetDx, offsetDy] = calculateOffset(e.x, e.y)
         updateRenderState({
-            dx: newDx,
-            dy: newDy, //
+            dx: renderState.dx + offsetDx,
+            dy: renderState.dy + offsetDy, //
         }, () => {
             //  updateStartCoords(e.x, e.y)
         })
-        // updateStartCoords(e.x, e.y)
+        updateStartCoords(e.x, e.y)
     }
     // 鼠标移动事件
     ele.addEventListener('mousemove', handleMouseMove, true)
