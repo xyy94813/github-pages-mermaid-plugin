@@ -26,3 +26,7 @@ the plugin not working in lower verion browser.
 
 The cost of building, compiling and publishing is too high
 and will not be considered at this stage.
+
+## TODO
+
+- [ ] custom config by the query of `import.meta.url`
