@@ -1,5 +1,5 @@
 import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.mjs'
-import panAndZoom from './panAndZoom.mjs'
+import panAndZoom from './pan-and-zoom.mjs'
 
 await mermaid.run({
     querySelector: 'pre code.language-mermaid',
