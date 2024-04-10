@@ -1,0 +1,29 @@
+{
+  "name": "github-pages-mermaid-plugin",
+  "description": "For support mermaid in gh-pages",
+  "version": "1.0.0",
+  "main": "./libs/gh-pages-mermaid.mjs",
+  "exports": {
+    ".": {
+      "import": "./libs/gh-pages-mermaid.mjs"
+    }
+  },
+  "packageManager": "yarn@4.0.2",
+  "scripts": {},
+  "keywords": [
+    "github",
+    "pages",
+    "gh-pages",
+    "mermaid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyy94813/github-pages-mermaid-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xyy94813/github-pages-mermaid-plugin/issues"
+  },
+  "homepage": "https://github.com/xyy94813/github-pages-mermaid-plugin#readme",
+  "author": "RoXoM <xyy94813@sina.com>",
+  "license": "MIT"
+}
