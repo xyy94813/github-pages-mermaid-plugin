@@ -7,6 +7,6 @@ await mermaid.run({
 
 const allSVGList = document.querySelectorAll('pre code.language-mermaid svg')
 allSVGList.forEach((svg) => {
-    svg.setAttribute('height', '500px')
+    svg.style.setProperty('min-height', '500px')
 })
 allSVGList.forEach(panAndZoom)
