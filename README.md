@@ -14,7 +14,7 @@ Add follow tmplate in `_includes/head-custom.html`.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/github-pages-mermaid-plugin@1/libs/mermaid-plugin.mjs"
+  src="https://cdn.jsdelivr.net/npm/github-pages-mermaid-plugin@1/libs/gh-pages-mermaid.mjs"
   defer
 ></script>
 ```
