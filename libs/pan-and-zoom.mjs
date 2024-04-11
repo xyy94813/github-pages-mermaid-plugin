@@ -61,6 +61,7 @@ const panAndZoom = (ele) => {
     }
 
     const handleMouseDown = (e) => {
+        e.preventDefault() // if ele is Img, it will trigger default drag action
         isDragging = true
         updateStartCoords(e.x, e.y)
     }
