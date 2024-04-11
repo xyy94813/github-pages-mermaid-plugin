@@ -51,10 +51,10 @@ const panAndZoom = (ele) => {
         requestAnimationFrame(() => {
             willRender = false
             const { dx, dy, scale } = renderState
-            const newAttr = 'translate(' + dx + ',' + dy + ') scale(' + scale + ')'
+            const newAttr = 'translate(' + dx + 'px' + ',' + dy + 'px' + ') scale(' + scale + ')'
 
-            if (ele.getAttribute('transform') !== newAttr) {
-                ele.setAttribute('transform', newAttr)
+            if (ele.style.getPropertyValue('transform') !== newAttr) {
+                ele.style.setProperty('transform', newAttr)
             }
             cb?.()
         })
