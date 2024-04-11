@@ -8,5 +8,7 @@ await mermaid.run({
 const allSVGList = document.querySelectorAll('pre code.language-mermaid svg')
 allSVGList.forEach((svg) => {
     svg.style.setProperty('min-height', '500px')
+    // set overflow of `pre` to hidden for reduce shake
+    svg.parentNode.parentNode.style.setProperty('overflow', 'hidden')
 })
 allSVGList.forEach(panAndZoom)
