@@ -1,7 +1,7 @@
 {
   "name": "github-pages-mermaid-plugin",
   "description": "For support mermaid in gh-pages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./libs/gh-pages-mermaid.mjs",
   "exports": {
     ".": {
@@ -9,7 +9,6 @@
     }
   },
   "packageManager": "yarn@4.0.2",
-  "scripts": {},
   "keywords": [
     "github",
     "pages",
